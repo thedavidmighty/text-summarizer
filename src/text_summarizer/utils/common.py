@@ -10,7 +10,7 @@ from typing import Any
 
 #first we will create a function to read yaml files
 @ensure_annotations
-def read_yaml(file_path: str) -> ConfigBox:
+def read_yaml(file_path: Union[str, Path]) -> ConfigBox:
     try:
         with open(file_path) as yaml_file:
             content = yaml.safe_load(yaml_file)
