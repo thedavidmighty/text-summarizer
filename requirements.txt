@@ -11,6 +11,7 @@ PyYAML
 matplotlib
 torch
 notebook
+evaluate
 boto3
 mypy-boto3-s3
 python-box==6.0.2
