@@ -7,6 +7,6 @@ COPY . /app
 
 RUN pip install -r requirements.txt
 RUN pip install --upgrade accelerate
-RUN pip install transformers accelerate
+RUN pip install transformers accelerate && pip cache purge
 
 CMD ["python3", "app.py"]
